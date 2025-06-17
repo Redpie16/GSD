@@ -20,9 +20,11 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/yuezk/globalprotect-openconnect/repo/fedora-%OS_VERSION/yuezk-globalprotect-openconnect-fedora-%OS_VERSION.repo
     install:
       - micro
       - starship
+      - globalprotect-openconnect
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
